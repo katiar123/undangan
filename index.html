@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            transition: background-color 0.5s ease;
+            font-family: 'Lilita One', sans-serif;
+            font-size: 23px;
+        }
+        .navbar.scrolled {
+            background-color: #333 !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .navbar .nav-link {
+            color: white !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.911);
+            margin-right: 30px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #333 !important;
+        }
+        .hero {
+            background: url('img/nikah.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 250px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            padding: 60px 0;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.1rem;
+        }
+        .content img {
+            margin-bottom: 20px;
+        }
+        .map {
+            height: 400px;
+            width: 100%;
+            border: none;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media (max-width: 767px) {
+            .hero {
+                padding: 100px 0;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#story">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#details">Wedding Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location">Location</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="container">
+            <h1 class="display-4">Man & Woman Wedding</h1>
+            <p class="lead">Bergabunglah bersama kami untuk merayakan cinta</p>
+        </div>
+    </header>
+
+    <div class="container content">
+        <div class="row" id="story">
+            <div class="col-md-6">
+                <h2>Our Story</h2>
+                <p>Man dan Woman bertemu di perguruan tinggi dan dengan cepat menjadi sahabat. Setelah bertahun-tahun berpetualang dan tertawa, mereka bersemangat untuk memulai babak berikutnya bersama.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/nikah2.jpeg" class="img-fluid rounded shadow" alt="Our Story">
+            </div>
+        </div>
+
+        <div class="row mt-5" id="details">
+            <div class="col-md-6">
+                <img src="img/menikah-kawin-freepik_1692577739.webp" class="img-fluid rounded shadow" alt="Wedding Details">
+            </div>
+            <div class="col-md-6">
+                <h2>Wedding Details</h2>
+                <p><strong>Date:</strong> June 15, 2024</p>
+                <p><strong>Time:</strong> 4:00 PM</p>
+                <p><strong>Venue:</strong> SMKN 24 JAKARTA</p>
+            </div>
+        </div>
+
+        <div class="row mt-5" id="location">
+            <div class="col-12">
+                <h2>Location</h2>
+                <div class="map shadow rounded">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5545544502506!2d106.8965713740266!3d-6.322087661861601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed39f3a3c44d%3A0x83f2c08168c334bb!2sSMKN%2024%20Jakarta!5e0!3m2!1sid!2sid!4v1716734889483!5m2!1sid!2sid" width="100%" height="400" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Dengan cinta, Man & Woman</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+            
+        });
+    </script>
+</body>
+</html>
